@@ -1,0 +1,20 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Segmentation Result</title>
+</head>
+<body>
+    <h1>Segmentation Result</h1>
+
+    <h2>Original Image:</h2>
+    <img src="{{ url_for('static', filename='uploads/' + input_image) }}" style="width:300px;">
+
+    <h2>Predicted Mask:</h2>
+    <img src="{{ url_for('static', filename='uploads/' + mask_image) }}" style="width:300px;">
+
+    <br><br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
